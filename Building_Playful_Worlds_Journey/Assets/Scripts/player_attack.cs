@@ -31,7 +31,7 @@ public class player_attack : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, forestEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<forest_enemies>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<state_test>().TakeDamage(damage);
                 }
             }
         

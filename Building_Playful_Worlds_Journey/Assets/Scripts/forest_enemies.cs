@@ -3,23 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class forest_enemies : MonoBehaviour
+public class state_test : MonoBehaviour
 {
 
     public float health;
 
-
+    //Moving
     public float moveSpeed;
     private bool movingRight;
+
+
+    //Edge Detection
     public Transform groundDetection;
+    public float edgeDistance;
 
+
+    //Player Engagement
     private Transform target;
-
-    public float distance;
-
     public float engageDistance;
-
     public float followDistance;
+
+    //Fighting
+    public Transform attackPos;
+    public float targetRange;
+    public float activeFight;
+    public float fightBreak;
+    public LayerMask player;
+    public float Invincibility = 2;
+
+
+
+    
 
 
     // Start is called before the first frame update
@@ -38,15 +52,20 @@ public class forest_enemies : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position)  < followDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+            if (Vector2.Distance(transform.position, target.position) > engageDistance)
+            {
+                player_lives.health--;
+            }
         }
 
         else if (Vector2.Distance(transform.position, target.position) > followDistance)
         {
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.right, distance);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.right, edgeDistance);
 
-        if(groundInfo.collider == true)
+
+            if (groundInfo.collider == true)
         {
             if(movingRight == true)
             {
@@ -59,10 +78,6 @@ public class forest_enemies : MonoBehaviour
             }
         }
         }
-
-
-
-
     }
 
 

@@ -33,4 +33,5 @@ public class player_collision : MonoBehaviour
             player.GetComponent<Player_movement>().canJump = false;
         }
     }
+
 }
