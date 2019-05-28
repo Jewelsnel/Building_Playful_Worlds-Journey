@@ -61,10 +61,7 @@ public class player_lives : MonoBehaviour
             {
                 Debug.Log("Je bent doood");
             }
-            else
-            {
-                gameObject.GetComponent<player_animator_controller>().TriggerHurt(invincibilityTime);
-            }
+            
         }
 
     }
