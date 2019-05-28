@@ -34,6 +34,7 @@ public class Test_enemy : MonoBehaviour
     
 
     public float waitTimer = 5;
+    public float patrolTimer = 8;
     //If statements met states: als player character in de buurt komt, gaat hij rennnen
     //In de state zelf, een if statement plaatsen
 
@@ -114,19 +115,29 @@ public class Test_enemy : MonoBehaviour
 
     void IdleState()
     {
-        Debug.Log("Idle");
+        
         waitTimer -= Time.deltaTime;
         if (waitTimer < -0)
         {
-            waitTimer = Random.Range(3, 5);
+            waitTimer = Random.Range(2, 3);
             SwitchState(EnemyStates.Patrol);
+        }
+
+        if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
+        {
+            SwitchState(EnemyStates.Chase);
+        }
+
+        if (Vector2.Distance(transform.position, target.position) <= engageDistance)
+        {
+            SwitchState(EnemyStates.Attack);
         }
     }
 
     void PatrolState()
     {
 
-        Debug.Log("Patrol");
+        
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.right, edgeDistance);
@@ -148,6 +159,13 @@ public class Test_enemy : MonoBehaviour
             
         }
 
+        patrolTimer -= Time.deltaTime;
+        if (patrolTimer < -0)
+        {
+            patrolTimer = Random.Range(5, 8);
+            SwitchState(EnemyStates.Idle);
+        }
+
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
         {
             SwitchState(EnemyStates.Chase);
@@ -164,7 +182,7 @@ public class Test_enemy : MonoBehaviour
 
     void ChaseState()
     {
-        Debug.Log("Chase");
+        
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
@@ -184,7 +202,7 @@ public class Test_enemy : MonoBehaviour
     void AttackState()
     {
 
-        Debug.Log("Attack");
+        
         attackTimer -= Time.deltaTime;
         if (attackTimer < -0)
         {
