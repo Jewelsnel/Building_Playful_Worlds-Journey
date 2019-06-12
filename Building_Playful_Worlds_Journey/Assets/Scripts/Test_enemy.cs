@@ -133,7 +133,7 @@ public class Test_enemy : MonoBehaviour
             SwitchState(EnemyStates.Chase);
         }
 
-        if (Vector2.Distance(transform.position, target.position) <= engageDistance)
+        if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
             SwitchState(EnemyStates.Attack);
         }
@@ -178,9 +178,11 @@ public class Test_enemy : MonoBehaviour
             SwitchState(EnemyStates.Chase);
         }
 
-        if (Vector2.Distance(transform.position, target.position) <= engageDistance)
+        if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) > 2)
         {
             SwitchState(EnemyStates.Attack);
+ 
+
         }
 
 
@@ -194,10 +196,11 @@ public class Test_enemy : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
 
-        if (Vector2.Distance(transform.position, target.position) <= engageDistance)
+        if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
 
             SwitchState(EnemyStates.Attack);
+            
         }
 
         if (Vector2.Distance(transform.position, target.position) > followDistance)
@@ -208,11 +211,12 @@ public class Test_enemy : MonoBehaviour
 
     void AttackState()
     {
+ 
 
-        
         attackTimer -= Time.deltaTime;
         if (attackTimer < -0)
         {
+            Debug.Log("Valt aan");
             player_lives.health--;
             attackTimer = Random.Range(2, 3);
             playeranim.isHurt = true;
@@ -238,6 +242,7 @@ public class Test_enemy : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(player_detector.position, engageDistance);
+
     }
 
 }

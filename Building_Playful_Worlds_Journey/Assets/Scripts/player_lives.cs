@@ -60,7 +60,7 @@ public class player_lives : MonoBehaviour
 
             if (health <= 0f)
             {
-                Debug.Log("Je bent doood");
+                //Debug.Log("Je bent doood");
             }
             
         }
