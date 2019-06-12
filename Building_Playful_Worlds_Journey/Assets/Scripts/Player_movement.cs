@@ -9,6 +9,7 @@ public class Player_movement : MonoBehaviour
     public float jumpHeight;
     public bool canJump = false;
 
+    public bool facingRight = true;
     
 
     // Start is called before the first frame update
@@ -17,25 +18,44 @@ public class Player_movement : MonoBehaviour
         
     }
 
+    void Update()
+    {
+        Jump();
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
-             
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        float moveInput = Input.GetAxis("Horizontal");
+        Vector3 movement = new Vector3(moveInput, 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;  
 
-        Jump();
-            
+        if (moveInput > 0 && !facingRight)
+        {
+            Flip();
+        }
+
+        else if (moveInput < 0 && facingRight)
+        {
+            Flip();
+        }
     }
 
     private void Jump()
     {
+        Debug.Log(canJump);
         if (Input.GetButtonDown("Jump") && canJump == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
-
-
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
 }

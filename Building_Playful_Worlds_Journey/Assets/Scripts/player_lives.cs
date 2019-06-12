@@ -18,6 +18,7 @@ public class player_lives : MonoBehaviour
 
 
 
+
     //public GameManager gameManager;
 
 
@@ -69,6 +70,7 @@ public class player_lives : MonoBehaviour
     public void Hurt()
     {
         health--;
+
     }
 
 

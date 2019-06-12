@@ -6,6 +6,8 @@ public enum EnemyStates { Idle, Patrol, Chase, Attack}
 
 public class Test_enemy : MonoBehaviour
 {
+    private player_animator_controller playeranim;
+
     public EnemyStates state;
     public float health;
 
@@ -35,6 +37,9 @@ public class Test_enemy : MonoBehaviour
 
     public float waitTimer = 5;
     public float patrolTimer = 8;
+
+    //public bool hurtPlayer;
+
     //If statements met states: als player character in de buurt komt, gaat hij rennnen
     //In de state zelf, een if statement plaatsen
 
@@ -46,7 +51,7 @@ public class Test_enemy : MonoBehaviour
         state = EnemyStates.Idle;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-
+        playeranim = target.gameObject.GetComponent<player_animator_controller>();
 
     }
 
@@ -164,6 +169,8 @@ public class Test_enemy : MonoBehaviour
         {
             patrolTimer = Random.Range(5, 8);
             SwitchState(EnemyStates.Idle);
+            
+
         }
 
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
@@ -208,6 +215,7 @@ public class Test_enemy : MonoBehaviour
         {
             player_lives.health--;
             attackTimer = Random.Range(2, 3);
+            playeranim.isHurt = true;
 
         }
 
