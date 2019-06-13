@@ -27,4 +27,5 @@ public class TimelineManager : MonoBehaviour
             playerAnimator.runtimeAnimatorController = playerAnim;
         }
     }
+
 }

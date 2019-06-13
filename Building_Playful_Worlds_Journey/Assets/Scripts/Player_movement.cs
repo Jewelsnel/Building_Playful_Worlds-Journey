@@ -47,7 +47,21 @@ public class Player_movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && canJump == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
+            
         }
+
+        else if (canJump == false)
+        {
+            moveSpeed = 25;
+        }
+
+        if (canJump == true)
+        {
+            moveSpeed = 60;
+        }
+
+
+
     }
 
     private void Flip()

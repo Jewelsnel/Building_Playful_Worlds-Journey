@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum EnemyStates { Idle, Patrol, Chase, Attack}
+public enum GroundEnemyStates { Idle, Patrol, Chase, Attack}
 
-public class Test_enemy : MonoBehaviour
+public class Ground_Enemy : MonoBehaviour
 {
     private player_animator_controller playeranim;
 
-    public EnemyStates state;
+    public GroundEnemyStates state;
     public float health;
     public Score score;
 
@@ -48,7 +48,7 @@ public class Test_enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        state = EnemyStates.Idle;
+        state = GroundEnemyStates.Idle;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
         playeranim = target.gameObject.GetComponent<player_animator_controller>();
@@ -69,22 +69,22 @@ public class Test_enemy : MonoBehaviour
 
         switch (state)
         {
-            case EnemyStates.Idle:
+            case GroundEnemyStates.Idle:
                 IdleState();
 
                 break;
 
-            case EnemyStates.Patrol:
+            case GroundEnemyStates.Patrol:
                 PatrolState();
 
                 break;
 
-            case EnemyStates.Chase:
+            case GroundEnemyStates.Chase:
                 ChaseState();
 
                 break;
 
-            case EnemyStates.Attack:
+            case GroundEnemyStates.Attack:
                 AttackState();
 
                 break;
@@ -95,7 +95,7 @@ public class Test_enemy : MonoBehaviour
 
     }
 
-    public void SwitchState(EnemyStates newState)
+    public void SwitchState(GroundEnemyStates newState)
     {
         state = newState;
     }
@@ -126,17 +126,17 @@ public class Test_enemy : MonoBehaviour
         if (waitTimer < -0)
         {
             waitTimer = Random.Range(2, 3);
-            SwitchState(EnemyStates.Patrol);
+            SwitchState(GroundEnemyStates.Patrol);
         }
 
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
         {
-            SwitchState(EnemyStates.Chase);
+            SwitchState(GroundEnemyStates.Chase);
         }
 
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
-            SwitchState(EnemyStates.Attack);
+            SwitchState(GroundEnemyStates.Attack);
         }
     }
 
@@ -146,10 +146,10 @@ public class Test_enemy : MonoBehaviour
         
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, edgeDistance);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.right, edgeDistance);
 
 
-        if (groundInfo.collider == false)
+        if (groundInfo.collider)
         {
             if (movingRight == true)
             {
@@ -168,19 +168,19 @@ public class Test_enemy : MonoBehaviour
         if (patrolTimer < -0)
         {
             patrolTimer = Random.Range(5, 8);
-            SwitchState(EnemyStates.Idle);
+            SwitchState(GroundEnemyStates.Idle);
             
 
         }
 
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
         {
-            SwitchState(EnemyStates.Chase);
+            SwitchState(GroundEnemyStates.Chase);
         }
 
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) > 2)
         {
-            SwitchState(EnemyStates.Attack);
+            SwitchState(GroundEnemyStates.Attack);
  
 
         }
@@ -199,13 +199,13 @@ public class Test_enemy : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
 
-            SwitchState(EnemyStates.Attack);
+            SwitchState(GroundEnemyStates.Attack);
             
         }
 
         if (Vector2.Distance(transform.position, target.position) > followDistance)
         {
-            SwitchState(EnemyStates.Patrol);
+            SwitchState(GroundEnemyStates.Patrol);
         }
     }
 
@@ -227,13 +227,13 @@ public class Test_enemy : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
         {
 
-            SwitchState(EnemyStates.Chase);
+            SwitchState(GroundEnemyStates.Chase);
         }
 
 
         if (Vector2.Distance(transform.position, target.position) > followDistance)
         {
-            SwitchState(EnemyStates.Patrol);
+            SwitchState(GroundEnemyStates.Patrol);
         }
     }
 
