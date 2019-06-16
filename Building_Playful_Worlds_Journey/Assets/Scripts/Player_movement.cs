@@ -52,7 +52,7 @@ public class Player_movement : MonoBehaviour
 
         else if (canJump == false)
         {
-            moveSpeed = 25;
+            moveSpeed = 40;
         }
 
         if (canJump == true)

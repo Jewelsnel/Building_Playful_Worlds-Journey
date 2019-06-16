@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public enum EnemyStates { Idle, Patrol, Chase, Attack}
 
 public class Test_enemy : MonoBehaviour
 {
+    //Animation
+    private Animator enemyAnim;
     private player_animator_controller playeranim;
 
     public EnemyStates state;
@@ -22,6 +25,7 @@ public class Test_enemy : MonoBehaviour
     //Edge Detection
     public Transform groundDetection;
     public float edgeDistance;
+    public float wallDistance;
 
 
     //Player Engagement
@@ -51,10 +55,19 @@ public class Test_enemy : MonoBehaviour
         state = EnemyStates.Idle;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
+        enemyAnim = GetComponent<Animator>();
         playeranim = target.gameObject.GetComponent<player_animator_controller>();
 
     }
 
+    /*private void Update()
+    {
+        if (isAttacking == true)
+        {
+            enemyAnim.SetTrigger("attack");
+            
+        }
+    }*/
 
     void FixedUpdate()
     {
@@ -106,22 +119,31 @@ public class Test_enemy : MonoBehaviour
         if (health <= 0f)
         {
             StartCoroutine(Death());
+            enemyAnim.SetBool("isAttacking", false);
+            enemyAnim.SetBool("isWalking", false);
+            enemyAnim.SetBool("isChasing", false);
 
         }
     }
 
     private IEnumerator Death()
     {
-        Debug.Log("Dood Animatie");
-        yield return new WaitForSeconds(3f);
+        enemyAnim.SetTrigger("death");    
+        yield return new WaitForSeconds(1.15f);
         Destroy(gameObject);
         Score.scoreAmount += 1;
     }
 
 
+
+
     void IdleState()
     {
-        
+        enemyAnim.SetBool("isAttacking", false);
+        enemyAnim.SetBool("isWalking", false);
+        enemyAnim.SetBool("isChasing", false);
+
+
         waitTimer -= Time.deltaTime;
         if (waitTimer < -0)
         {
@@ -142,11 +164,18 @@ public class Test_enemy : MonoBehaviour
 
     void PatrolState()
     {
+  
+        enemyAnim.SetBool("isWalking", true);
+        enemyAnim.SetBool("isChasing", false);
+        enemyAnim.SetBool("isAttacking", false);
 
-        
+
+
         transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, edgeDistance);
+
+        RaycastHit2D EdgeInfo = Physics2D.Raycast(groundDetection.position, Vector2.right, wallDistance);
 
 
         if (groundInfo.collider == false)
@@ -162,6 +191,21 @@ public class Test_enemy : MonoBehaviour
                 movingRight = true;
             }
             
+        }
+
+        else if (EdgeInfo.collider)
+        {
+            if (movingRight == true)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
+
         }
 
         patrolTimer -= Time.deltaTime;
@@ -191,7 +235,11 @@ public class Test_enemy : MonoBehaviour
 
     void ChaseState()
     {
-        
+ 
+        enemyAnim.SetBool("isChasing", true);
+        enemyAnim.SetBool("isWalking", false);
+        enemyAnim.SetBool("isAttacking", false);
+
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
@@ -211,14 +259,21 @@ public class Test_enemy : MonoBehaviour
 
     void AttackState()
     {
- 
+
+
+        enemyAnim.SetBool("isAttacking", true);
+        enemyAnim.SetBool("isWalking", false);
+        enemyAnim.SetBool("isChasing", false);
+
+
 
         attackTimer -= Time.deltaTime;
         if (attackTimer < -0)
         {
-            Debug.Log("Valt aan");
+
+            //Debug.Log("Valt aan");
             player_lives.health--;
-            attackTimer = Random.Range(2, 3);
+            attackTimer = Random.Range(4, 6);
             playeranim.isHurt = true;
 
         }

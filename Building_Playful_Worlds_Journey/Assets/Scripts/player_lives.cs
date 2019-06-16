@@ -24,8 +24,8 @@ public class player_lives : MonoBehaviour
 
     private void Start()
     {
-        health = 3;
-        numOfHearts = 3;
+        health = 6;
+        numOfHearts = 6;
     }
 
     public void Update()

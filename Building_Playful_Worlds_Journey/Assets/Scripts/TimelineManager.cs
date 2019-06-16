@@ -9,6 +9,7 @@ public class TimelineManager : MonoBehaviour
     public Animator playerAnimator;
     public RuntimeAnimatorController playerAnim;
     public PlayableDirector director;
+    public Camera mainCamera;
 
 
     // Start is called before the first frame update
@@ -16,6 +17,8 @@ public class TimelineManager : MonoBehaviour
     {
         playerAnim = playerAnimator.runtimeAnimatorController;
         playerAnimator.runtimeAnimatorController = null;
+
+        mainCamera = mainCamera.GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -26,6 +29,13 @@ public class TimelineManager : MonoBehaviour
             fix = true;
             playerAnimator.runtimeAnimatorController = playerAnim;
         }
-    }
 
+
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            director.Stop();
+            mainCamera.transform.localPosition = new Vector3(0, 5, -10);
+        }
+    }
 }

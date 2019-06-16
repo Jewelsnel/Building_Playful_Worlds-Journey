@@ -8,6 +8,7 @@ public class Obstacle_manager : MonoBehaviour
     // Obstacles
     public GameObject ObstacleOne;
     public GameObject ObstacleTwo;
+    public GameObject ObstacleThree;
 
     private bool canPlay = true;
 
@@ -34,6 +35,21 @@ public class Obstacle_manager : MonoBehaviour
             canPlay = false;
             Destroy (ObstacleOne);
         
+        }
+
+        if (Score.scoreAmount >= 6)
+        {
+
+
+            Destroy(ObstacleTwo);
+
+        }
+
+        if (Score.scoreAmount >= 7)
+        {
+
+            Destroy(ObstacleThree);
+
         }
     }
 }

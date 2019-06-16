@@ -19,6 +19,7 @@ public class player_attack : MonoBehaviour
     void Start()
     {
         
+        
     }
 
     // Update is called once per frame
