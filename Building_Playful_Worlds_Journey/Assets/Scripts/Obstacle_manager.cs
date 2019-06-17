@@ -16,7 +16,7 @@ public class Obstacle_manager : MonoBehaviour
     public Score score;
 
 
-
+    //Cutscene
     public PlayableDirector cutScene;
 
     // Start is called before the first frame update

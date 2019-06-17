@@ -5,7 +5,7 @@ public class End_Level : MonoBehaviour
 {
     public GameManager gameManager;
 
-    void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         gameManager.CompleteLevel();
     }

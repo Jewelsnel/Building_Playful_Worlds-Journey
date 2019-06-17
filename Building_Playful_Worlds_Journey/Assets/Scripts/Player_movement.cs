@@ -10,12 +10,16 @@ public class Player_movement : MonoBehaviour
     public bool canJump = false;
 
     public bool facingRight = true;
+
+    //private Animator myAnim;
+
     
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //myAnim = GetComponent<Animator>();
     }
 
     void Update()
@@ -43,7 +47,8 @@ public class Player_movement : MonoBehaviour
 
     private void Jump()
     {
-        
+
+
         if (Input.GetButtonDown("Jump") && canJump == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);

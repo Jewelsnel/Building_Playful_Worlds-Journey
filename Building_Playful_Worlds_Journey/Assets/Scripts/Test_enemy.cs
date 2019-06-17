@@ -10,6 +10,8 @@ public class Test_enemy : MonoBehaviour
     //Animation
     private Animator enemyAnim;
     private player_animator_controller playeranim;
+    private bool facingRight = true;
+    private SpriteRenderer enemy;
 
     public EnemyStates state;
     public float health;
@@ -57,21 +59,30 @@ public class Test_enemy : MonoBehaviour
 
         enemyAnim = GetComponent<Animator>();
         playeranim = target.gameObject.GetComponent<player_animator_controller>();
-
+        enemy = GetComponent<SpriteRenderer>();
     }
 
-    /*private void Update()
+    private void Update()
     {
-        if (isAttacking == true)
+        if (moveSpeed > 0 && !facingRight || moveSpeedAttack > 0 && !facingRight)
         {
-            enemyAnim.SetTrigger("attack");
-            
+
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
-    }*/
+
+        if (moveSpeed < 0 && facingRight || moveSpeedAttack < 0 && facingRight)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
 
     void FixedUpdate()
     {
-        ExecuteState();
+
+       ExecuteState();
+
+
     }
 
 
@@ -243,6 +254,7 @@ public class Test_enemy : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
+        
 
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
@@ -293,6 +305,7 @@ public class Test_enemy : MonoBehaviour
     }
 
 
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
@@ -301,6 +314,7 @@ public class Test_enemy : MonoBehaviour
     }
 
 }
+
 
 
 

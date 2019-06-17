@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class TimelineManager : MonoBehaviour
 {
     private bool fix = false;
     public Animator playerAnimator;
+
     public RuntimeAnimatorController playerAnim;
     public PlayableDirector director;
     public Camera mainCamera;
@@ -19,6 +21,8 @@ public class TimelineManager : MonoBehaviour
         playerAnimator.runtimeAnimatorController = null;
 
         mainCamera = mainCamera.GetComponent<Camera>();
+
+
     }
 
     // Update is called once per frame
@@ -28,6 +32,8 @@ public class TimelineManager : MonoBehaviour
         {
             fix = true;
             playerAnimator.runtimeAnimatorController = playerAnim;
+
+
         }
 
 

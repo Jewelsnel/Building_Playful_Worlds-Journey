@@ -22,10 +22,11 @@ public class player_animator_controller : MonoBehaviour
         if (Input.GetKey("left") || Input.GetKey("right") || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
             myAnim.SetBool("isRunning", true);
+            //myAnim.ResetTrigger("attack");
         }
         else
         {
-            myAnim.SetBool("isRunning", false);
+           myAnim.SetBool("isRunning", false);
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -37,6 +38,7 @@ public class player_animator_controller : MonoBehaviour
         {
             myAnim.SetTrigger("isHit");
             isHurt = false;
+            myAnim.ResetTrigger("attack");
         }
         
     }
