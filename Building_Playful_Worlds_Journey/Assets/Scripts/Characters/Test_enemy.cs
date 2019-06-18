@@ -10,8 +10,9 @@ public class Test_enemy : MonoBehaviour
     //Animation
     private Animator enemyAnim;
     private player_animator_controller playeranim;
-    private bool facingRight = true;
+    //private bool facingRight = true;
     private SpriteRenderer enemy;
+
 
     public EnemyStates state;
     public float health;
@@ -62,26 +63,12 @@ public class Test_enemy : MonoBehaviour
         enemy = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
-    {
-        if (moveSpeed > 0 && !facingRight || moveSpeedAttack > 0 && !facingRight)
-        {
-
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
-
-        if (moveSpeed < 0 && facingRight || moveSpeedAttack < 0 && facingRight)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-    }
 
 
     void FixedUpdate()
     {
 
        ExecuteState();
-
 
     }
 
@@ -129,7 +116,7 @@ public class Test_enemy : MonoBehaviour
         health -= amount;
         if (health <= 0f)
         {
-            StartCoroutine(Death());
+            enemyAnim.SetTrigger("death");
             enemyAnim.SetBool("isAttacking", false);
             enemyAnim.SetBool("isWalking", false);
             enemyAnim.SetBool("isChasing", false);
@@ -137,11 +124,10 @@ public class Test_enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator Death()
+    public void Death()
     {
-        enemyAnim.SetTrigger("death");    
-        yield return new WaitForSeconds(1.15f);
-        Destroy(gameObject);
+        Debug.Log("Enemy is dood");
+        Destroy(gameObject);  
         Score.scoreAmount += 1;
     }
 
@@ -254,7 +240,16 @@ public class Test_enemy : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
-        
+        if (transform.position.x < 0)//true
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            //movingRight = false;
+        }
+        if (transform.position.x > 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+           // movingRight = true;
+        }
 
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
@@ -312,6 +307,8 @@ public class Test_enemy : MonoBehaviour
         Gizmos.DrawWireSphere(player_detector.position, engageDistance);
 
     }
+
+
 
 }
 

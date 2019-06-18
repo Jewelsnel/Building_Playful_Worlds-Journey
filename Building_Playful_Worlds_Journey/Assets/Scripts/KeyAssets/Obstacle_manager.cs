@@ -11,6 +11,8 @@ public class Obstacle_manager : MonoBehaviour
     public GameObject ObstacleThree;
 
     private bool canPlay = true;
+    private bool isDestroyed = false;
+
 
     //Score
     public Score score;
@@ -19,10 +21,20 @@ public class Obstacle_manager : MonoBehaviour
     //Cutscene
     public PlayableDirector cutScene;
 
+    //Animators
+    public Animator obsOneAnim;
+    public Animator obsTwoAnim;
+    public Animator obsThreeAnim;
+
+
     // Start is called before the first frame update
     void Start()
     {
         cutScene = GetComponent<PlayableDirector>();
+
+        obsOneAnim = obsOneAnim.GetComponent<Animator>();
+        obsTwoAnim = ObstacleTwo.GetComponent<Animator>();
+        obsThreeAnim = obsThreeAnim.GetComponent<Animator>();
 
     }
 
@@ -31,24 +43,26 @@ public class Obstacle_manager : MonoBehaviour
     {
        if(Score.scoreAmount >= 1 && canPlay == true)
         {
+            obsOneAnim.SetTrigger("isDead");
             cutScene.Play();
             canPlay = false;
-            Destroy (ObstacleOne);
+            
         
         }
 
-        if (Score.scoreAmount >= 6)
+        if (Score.scoreAmount == 6 && isDestroyed == false)
         {
 
 
-            Destroy(ObstacleTwo);
-
+            obsTwoAnim.SetTrigger("isDead");
+            isDestroyed = true;
         }
 
-        if (Score.scoreAmount >= 7)
+        if (Score.scoreAmount == 7 && isDestroyed == true)
         {
 
-            Destroy(ObstacleThree);
+            obsThreeAnim.SetTrigger("isDead");
+            isDestroyed = false;
 
         }
     }

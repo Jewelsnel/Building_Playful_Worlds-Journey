@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public Score score;
+
+
+    public float restartDelay = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,11 +32,11 @@ public class GameManager : MonoBehaviour
 
     private void Restart()
     {
+        Score.scoreAmount = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void CompleteLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+
+
+
 }

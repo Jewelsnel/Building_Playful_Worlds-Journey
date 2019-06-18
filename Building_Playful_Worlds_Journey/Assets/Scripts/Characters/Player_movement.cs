@@ -11,6 +11,10 @@ public class Player_movement : MonoBehaviour
 
     public bool facingRight = true;
 
+    private Rigidbody2D rb;
+
+    public GameObject gameOverUI;
+
     //private Animator myAnim;
 
     
@@ -20,6 +24,7 @@ public class Player_movement : MonoBehaviour
     void Start()
     {
         //myAnim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -42,6 +47,12 @@ public class Player_movement : MonoBehaviour
         else if (moveInput < 0 && facingRight)
         {
             Flip();
+        }
+
+
+        if(rb.position.y < -20f)
+        {
+            
         }
     }
 
