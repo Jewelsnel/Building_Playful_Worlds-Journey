@@ -126,7 +126,7 @@ public class Test_enemy : MonoBehaviour
 
     public void Death()
     {
-        Debug.Log("Enemy is dood");
+
         Destroy(gameObject);  
         Score.scoreAmount += 1;
     }

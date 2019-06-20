@@ -17,9 +17,11 @@ public class Player_movement : MonoBehaviour
 
     //private Animator myAnim;
 
-    
-
-
+    public float gravity = -15f;
+    private Vector2 velocity;
+    private Coroutine jumpRoutine;
+    private bool applyGravity = true;
+    public float drag = 0.99f;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +38,21 @@ public class Player_movement : MonoBehaviour
     void FixedUpdate()
     {
         float moveInput = Input.GetAxis("Horizontal");
-        Vector3 movement = new Vector3(moveInput, 0f, 0f);
-        transform.position += movement * Time.deltaTime * moveSpeed;  
+        Vector3 movement = new Vector3(moveInput,0 , 0f);
+        if (!canJump && applyGravity)
+        {
+            velocity += new Vector2(0, gravity * Time.deltaTime);
+            velocity += new Vector2(0.1f * movement.x * moveSpeed, 0);
+        }
+        else if(canJump && applyGravity)
+        {
+            velocity += new Vector2(movement.x * moveSpeed, 0);
+            velocity = new Vector2(velocity.x * drag, 0);
+        }
+        velocity = new Vector2(Mathf.Sign(velocity.x) * Mathf.Min(Mathf.Abs(velocity.x), Mathf.Abs(moveSpeed)), velocity.y);
+        
+
+        rb.velocity = velocity;
 
         if (moveInput > 0 && !facingRight)
         {
@@ -62,19 +77,22 @@ public class Player_movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && canJump == true)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpHeight), ForceMode2D.Impulse);
-            
+            if(jumpRoutine == null)
+            {
+                jumpRoutine = StartCoroutine(JumpRoutine());
+            }
+
         }
 
-        else if (canJump == false)
-        {
-            moveSpeed = 40;
-        }
+        //else if (canJump == false)
+        //{
+        //    moveSpeed = 40;
+        //}
 
-        if (canJump == true)
-        {
-            moveSpeed = 60;
-        }
+        //if (canJump == true)
+        //{
+        //    moveSpeed = 60;
+        //}
 
 
 
@@ -86,6 +104,15 @@ public class Player_movement : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    IEnumerator JumpRoutine()
+    {
+        applyGravity = false;
+        velocity += new Vector2(0, jumpHeight);
+        yield return new WaitForSeconds(0.2f);
+        applyGravity = true;
+        jumpRoutine = null;
     }
 
 }

@@ -1,0 +1,1616 @@
+atomVersion 1.0;
+mayaVersion 2019;
+mayaSceneFile D:/HKU/BLOK4/Project Vrij/Characters/project_vrij_characters/scenes/ch_businessman_walk.mb;
+timeUnit Unknown Time Unit;
+linearUnit cm;
+angularUnit deg;
+startTime 41.666667;
+endTime 833.33333;
+offlineFile ;
+dagNode {
+  ch_main_character_briefcase1 1 2;
+  cached v visibility 0;
+  { 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  }
+}
+dagNode {
+  hip_j 1 3;
+  static rotate.rx rotateX 0;
+  { -3.7742662 }
+  static rotate.ry rotateY 1;
+  { -0.36927864 }
+  static rotate.rz rotateZ 2;
+  { 8.1426898 }
+  static scale.sx scaleX 3;
+  { 1 }
+  static scale.sy scaleY 4;
+  { 1 }
+  static scale.sz scaleZ 5;
+  { 1 }
+  static translate.tx translateX 6;
+  { 0.069439603 }
+  static translate.ty translateY 7;
+  { 5.2126061 }
+  static translate.tz translateZ 8;
+  { 0.02272868 }
+  static v visibility 9;
+  { 1 }
+}
+dagNode {
+  l_ankle 1 1;
+  static ikb ikBlend 0;
+  { 1 }
+  static off offset 1;
+  { 0 }
+  static poleVector.pvx poleVectorX 2;
+  { 0.084811836 }
+  static poleVector.pvy poleVectorY 3;
+  { 0.0023454485 }
+  static poleVector.pvz poleVectorZ 4;
+  { 0.44317553 }
+  static rol roll 5;
+  { 0 }
+  static rotate.rx rotateX 6;
+  { 0 }
+  static rotate.ry rotateY 7;
+  { 0 }
+  static rotate.rz rotateZ 8;
+  { 0 }
+  static scale.sx scaleX 9;
+  { 1 }
+  static scale.sy scaleY 10;
+  { 1 }
+  static scale.sz scaleZ 11;
+  { 1 }
+  static twi twist 15;
+  { 0 }
+  static v visibility 16;
+  { 1 }
+}
+dagNode {
+  r_ankle 1 1;
+  static ikb ikBlend 0;
+  { 1 }
+  static off offset 1;
+  { 0 }
+  static poleVector.pvx poleVectorX 2;
+  { -0.084810698 }
+  static poleVector.pvy poleVectorY 3;
+  { 0.0023453062 }
+  static poleVector.pvz poleVectorZ 4;
+  { 0.44317575 }
+  static rol roll 5;
+  { 0 }
+  static rotate.rx rotateX 6;
+  { 0 }
+  static rotate.ry rotateY 7;
+  { 0 }
+  static rotate.rz rotateZ 8;
+  { 0 }
+  static scale.sx scaleX 9;
+  { 1 }
+  static scale.sy scaleY 10;
+  { 1 }
+  static scale.sz scaleZ 11;
+  { 1 }
+  static twi twist 15;
+  { 0 }
+  static v visibility 16;
+  { 1 }
+}
+dagNode {
+  ik_spine 1 0;
+  static ikb ikBlend 0;
+  { 1 }
+  static off offset 1;
+  { 0 }
+  static poleVector.pvx poleVectorX 2;
+  { 0 }
+  static poleVector.pvy poleVectorY 3;
+  { 0 }
+  static poleVector.pvz poleVectorZ 4;
+  { 1 }
+  static rotate.rx rotateX 6;
+  { 89.978184 }
+  static rotate.ry rotateY 7;
+  { -45.067548 }
+  static rotate.rz rotateZ 8;
+  { 99.393795 }
+  static scale.sx scaleX 9;
+  { 1 }
+  static scale.sy scaleY 10;
+  { 1 }
+  static scale.sz scaleZ 11;
+  { 1 }
+  static translate.tx translateX 12;
+  { -0.26003593 }
+  static translate.ty translateY 13;
+  { 7.1884687 }
+  static translate.tz translateZ 14;
+  { 0.74009304 }
+  static v visibility 16;
+  { 1 }
+  cached rol roll 0;
+  { 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  }
+  cached twi twist 1;
+  { -0.581 -0.57949161 -0.57515114 -0.56825566 -0.55908222 -0.54790788 -0.5350097 -0.52066474 -0.50515006 -0.48874272 -0.47171977 -0.45435828 -0.4369353 -0.41972789 -0.40301312 -0.38706803 -0.37216969 -0.35859517 -0.34662151 -0.33652577 -0.32858502 -0.32303937 -0.31840354 -0.31378621 -0.30918773 -0.3046084 -0.30004858 -0.29550857 -0.29098872 -0.28648935 -0.2820108 -0.27755338 -0.27311744 -0.26870329 -0.26431128 -0.25994172 -0.25559495 -0.2512713 -0.24697109 -0.24269466 -0.23844234 -0.23421444 -0.23001131 -0.22583328 -0.22168066 -0.2175538 -0.21345302 -0.20937865 -0.20533101 -0.20131045 -0.19731728 -0.19335184 -0.18941445 -0.18550545 -0.18162517 -0.17777393 -0.17395206 -0.17015989 -0.16639776 -0.16266599 -0.15896491 -0.15529485 -0.15165613 -0.1480491 -0.14447407 -0.14093138 -0.13742136 -0.13394433 -0.13050063 -0.12709058 -0.12371451 -0.12037276 -0.11706565 -0.11379351 -0.11055667 -0.10735546 -0.1041902 -0.10106124 -0.097968895 -0.094913496 -0.091895374 -0.088914856 -0.085972274 -0.083067955 -0.08020223 -0.077375427 -0.074587876 -0.071839907 -0.069131847 -0.066464028 -0.063836777 -0.061250425 -0.0587053 -0.056201732 -0.05374005 -0.051320583 -0.048943661 -0.046609613 -0.044318769 -0.042071457 -0.039868007 -0.037708747 -0.035594009 -0.03352412 -0.031499409 -0.029520208 -0.027586843 -0.025699646 -0.023858944 -0.022065068 -0.020318347 -0.018619109 -0.016967685 -0.015364404 -0.013809594 -0.012303585 -0.010846707 -0.0094392879 -0.0080816581 -0.0067741466 -0.0055170826 -0.0043107953 -0.0031556141 -0.0020518684 -0.00099988721 0 0.00096209245 0.0019010958 0.0028172905 0.003710957 0.0045823756 0.0054318269 0.0062595913 0.0070659492 0.0078511811 0.0086155673 0.0093593883 0.010082925 0.010786457 0.011470265 0.012134629 0.012779831 0.01340615 0.014013867 0.014603262 0.015174616 0.015728209 0.016264321 0.016783234 0.017285227 0.017770581 0.018239577 0.018692494 0.019129613 0.019551215 0.01995758 0.020348988 0.020725721 0.021088058 0.021436279 0.021770666 0.022091499 0.022399057 0.022693622 0.022975474 0.023244894 0.023502161 0.023747557 0.023981361 0.024203855 0.024415318 0.024616031 0.024806275 0.024986329 0.025156475 0.025316992 0.025468162 0.025610265 0.02574358 0.025868389 0.025984972 0.026093609 0.026194581 0.026288168 0.026374651 0.02645431 0.026527425 0.026594278 0.026655147 0.026710315 0.026760061 0.026804666 0.026844409 0.026879573 0.026910436 0.02693728 0.026960385 0.026980031 0.026996498 0.027010068 0.027021021 0.027029636 0.027036195 0.027040978 0.027044266 0.027046338 0.027047475 0.027047958 0.027048067 0.026903447 0.026152119 0.024774751 0.022788485 0.020210459 0.017057815 0.013347692 0.0090972308 0.0043235716 -0.0009561456 -0.0067247805 -0.012965193 -0.019660243 -0.026792789 -0.034345693 -0.042301814 -0.050644011 -0.059355144 -0.068418074 -0.077815659 -0.087530761 -0.097546238 -0.10784495 -0.11840976 -0.12922352 -0.1402691 -0.15152935 -0.16298713 -0.17462531 -0.18642675 -0.1983743 -0.21045082 -0.22263917 -0.23492222 -0.24728282 -0.25970384 -0.27216812 -0.28465854 -0.29715795 -0.30964922 -0.32211519 -0.33453874 -0.34690272 -0.35918999 -0.37138341 -0.38346584 -0.39542014 -0.40722917 -0.4188758 -0.43034287 -0.44161325 -0.4526698 -0.46349538 -0.47407286 -0.48438508 -0.4944149 -0.5041452 -0.51355883 -0.52263864 -0.5313675 -0.53972827 -0.54770381 -0.55527698 -0.56243063 -0.56914763 -0.57541084 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311 -0.58120311  }
+}
+dagNode {
+  spine_curve 1 3;
+  static rotate.ry rotateY 1;
+  { 0 }
+  static scale.sx scaleX 3;
+  { 1 }
+  static scale.sy scaleY 4;
+  { 1 }
+  static scale.sz scaleZ 5;
+  { 1 }
+  static v visibility 9;
+  { 1 }
+}
+dagNode {
+  master_CTRL 1 4;
+  anim visibility visibility 0;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 1 spline step 1 0 0;
+    }
+  }
+  anim translate.translateX translateX 1;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim translate.translateY translateY 2;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim translate.translateZ translateZ 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim rotate.rotateX rotateX 4;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim rotate.rotateY rotateY 5;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim rotate.rotateZ rotateZ 6;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 0 auto auto 1 0 0;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 1 auto auto 1 0 0;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 1 auto auto 1 0 0;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      333.33333 1 auto auto 1 0 0;
+    }
+  }
+}
+dagNode {
+  r_foot_CTRL 2 1;
+  anim rotate.rotateX rotateX 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 7.7159678 auto auto 1 0 0;
+      83.333333 16.753347 auto auto 1 0 0;
+      145.83333 0 auto auto 1 0 0;
+      187.5 32.083582 auto auto 1 0 0;
+      227.5 -28.808267 auto auto 1 0 0;
+      250 0 auto auto 1 0 0;
+      316.66667 7.7159678 fixed fixed 1 0 0 11.948716 1 11.948716 1;
+    }
+  }
+  anim rotate.rotateY rotateY 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      145.83333 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      145.83333 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateX translateX 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      145.83333 0 auto auto 1 0 0;
+      186.25 -0.07356471 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateY translateY 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.081957372 auto auto 1 0 0;
+      83.333333 0.1779505 auto auto 1 0 0;
+      145.83333 0 auto auto 1 0 0;
+      186.25 1.0581355 auto auto 1 0 0;
+      250 -0.025995848 auto auto 1 0 0;
+      316.66667 0.081957372 fixed fixed 1 0 0 0.12878899 1 0.12878899 1;
+    }
+  }
+  anim translate.translateZ translateZ 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.23236002 auto auto 1 0 0;
+      83.333333 -0.50451326 auto auto 1 0 0;
+      145.83333 -0.50451326 auto auto 1 0 0;
+      186.25 1.4712891 auto auto 1 0 0;
+      227.5 2.6209976 auto auto 1 0 0;
+      250 1.7676088 auto auto 1 0 0;
+      316.66667 -0.23236002 fixed fixed 1 0 0 -0.36512955 1 -0.36512955 1;
+    }
+  }
+  anim visibility visibility 6;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      145.83333 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      145.83333 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      145.83333 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      145.83333 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  l_foot_CRTL 2 1;
+  anim rotate.rotateX rotateX 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 42.135751 auto auto 1 0 0;
+      83.333333 -7.8601625 auto auto 1 0 0;
+      104.16667 -19.114763 auto auto 1 0 0;
+      125 0 auto auto 1 0 0;
+      316.66667 42.136 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateY rotateY 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateX translateX 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.28060841 auto auto 1 0 0;
+      62.5 0.30495505 auto auto 1 0 0;
+      125 0.19699524 auto auto 1 0 0;
+      316.66667 0.281 fixed fixed 1 0 0 0.13627154 1 0.13627154 1;
+    }
+  }
+  anim translate.translateY translateY 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.81961572 auto auto 1 0 0;
+      62.5 0.78682376 auto auto 1 0 0;
+      125 0.035698874 auto auto 1 0 0;
+      229.33333 0.15340404 auto auto 1 0 0;
+      316.66667 0.82 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateZ translateZ 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.93279293 auto auto 1 0 0;
+      62.5 1.0845075 auto auto 1 0 0;
+      83.333333 1.2961261 auto auto 1 0 0;
+      229.16667 -1.3098941 auto auto 1 0 0;
+      316.66667 0.933 fixed fixed 1 0 0 -0.84263554 1 -0.84263554 1;
+    }
+  }
+  anim visibility visibility 6;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  hip_CTRL 2 2;
+  anim rotate.rotateY rotateY 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateX rotateX 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 7.441 auto auto 1 0 0;
+      62.5 4.8284702 auto auto 1 0 0;
+      125 0 auto auto 1 0 0;
+      166.66667 0 auto auto 1 0 0;
+      229.16667 -6.4948225 auto auto 1 0 0;
+      270.83333 0 auto auto 1 0 0;
+      316.66667 7.4414097 fixed fixed 1 0 0 4.7318011 1 4.7318011 1;
+    }
+  }
+  anim translate.translateX translateX 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.0013625495 auto auto 1 0 0;
+      83.333333 -0.0029584448 auto auto 1 0 0;
+      125 0.031635067 auto auto 1 0 0;
+      229.16667 0.036384967 auto auto 1 0 0;
+      270.83333 0.025129353 auto auto 1 0 0;
+      316.66667 -0.0013625495 fixed fixed 1 0 0 -0.0021411335 1 -0.0021411335 1;
+    }
+  }
+  anim translate.translateY translateY 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.073967914 auto auto 1 0 0;
+      62.5 -0.040598947 auto auto 1 0 0;
+      83.333333 -0.01435694 auto auto 1 0 0;
+      125 -0.35550302 auto auto 1 0 0;
+      229.16667 -0.3137503 auto auto 1 0 0;
+      270.83333 -0.6565318 auto auto 1 0 0;
+      316.66667 -0.073967914 fixed fixed 1 0 0 0.074874657 1 0.074874657 1;
+    }
+  }
+  anim translate.translateZ translateZ 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.15280513 auto auto 1 0 0;
+      62.5 0.23864567 auto auto 1 0 0;
+      83.333333 0.25176439 auto auto 1 0 0;
+      125 0.23941881 auto auto 1 0 0;
+      229.16667 0.42380071 auto auto 1 0 0;
+      270.83333 0.31929403 auto auto 1 0 0;
+      316.66667 0.15280513 fixed fixed 1 0 0 0.23439965 1 0.23439965 1;
+    }
+  }
+  anim visibility visibility 6;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  chest_CTRL 3 4;
+  anim rotate.rotateY rotateY 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.581 auto auto 1 0 0;
+      62.5 -0.32381378 auto auto 1 0 0;
+      166.66667 0 auto auto 1 0 0;
+      250 0.027048069 auto auto 1 0 0;
+      316.66667 -0.58120311 fixed fixed 1 0 0 -0.31805096 1 -0.31805096 1;
+    }
+  }
+  anim rotate.rotateX rotateX 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -2.995 auto auto 1 0 0;
+      62.5 -4.3536836 auto auto 1 0 0;
+      83.333333 -5.0085922 auto auto 1 0 0;
+      166.66667 0 auto auto 1 0 0;
+      250 -5.0189495 auto auto 1 0 0;
+      316.66667 -2.9951334 fixed fixed 1 0 0 -3.0400623 1 -3.0400623 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -9.671 auto auto 1 0 0;
+      62.5 -4.2454718 auto auto 1 0 0;
+      166.66667 0 auto auto 1 0 0;
+      250 -0.24778898 auto auto 1 0 0;
+      316.66667 -9.6712987 fixed fixed 1 0 0 -4.1626199 1 -4.1626199 1;
+    }
+  }
+  anim visibility visibility 3;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim translate.translateX translateX 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.334 auto auto 1 0 0;
+      62.5 0.13228719 auto auto 1 0 0;
+      83.333333 -0.0053964661 auto auto 1 0 0;
+      250 -0.077061284 auto auto 1 0 0;
+      316.66667 0.33449726 fixed fixed 1 0 0 0.12993402 1 0.12993402 1;
+    }
+  }
+  anim translate.translateY translateY 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.022 auto auto 1 0 0;
+      62.5 0.019183856 auto auto 1 0 0;
+      83.333333 0.037090109 auto auto 1 0 0;
+      250 0.10579536 auto auto 1 0 0;
+      316.66667 -0.021891346 fixed fixed 1 0 0 0.018842639 1 0.018842639 1;
+    }
+  }
+  anim translate.translateZ translateZ 6;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.012163547 auto auto 1 0 0;
+      83.333333 0.026410183 auto auto 1 0 0;
+      250 0.021743489 auto auto 1 0 0;
+      316.66667 0.012163547 fixed fixed 1 0 0 0.019114004 1 0.019114004 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  r_wrist_CTRL 4 1;
+  anim rotate.rotateX rotateX 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.23707021 auto auto 1 0 0;
+      229.16667 -3.2004478 auto auto 1 0 0;
+      316.66667 -0.23707021 fixed fixed 1 0 0 -0.81493238 1 -0.81493238 1;
+    }
+  }
+  anim rotate.rotateY rotateY 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateX translateX 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -0.1517683 auto auto 1 0 0;
+      125 0.069762418 fixed fixed 1 0 0 0 1 0 1;
+      166.66667 -0.3152545 auto auto 1 0 0;
+      229.16667 -0.38852784 auto auto 1 0 0;
+      316.66667 -0.1517683 fixed fixed 1 0 0 0.13627154 1 0.13627154 1;
+    }
+  }
+  anim translate.translateY translateY 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.33453799 auto auto 1 0 0;
+      125 0.30414296 fixed fixed 1 0 0 -0.051644883 1 -0.051644883 1;
+      166.66667 0.028705832 auto auto 1 0 0;
+      229.16667 0.68790081 auto auto 1 0 0;
+      316.66667 0.33453799 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateZ translateZ 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.01207919 auto auto 1 0 0;
+      125 -1.357853 fixed fixed 1 0 0 0 1 0 1;
+      166.66667 -0.37901926 auto auto 1 0 0;
+      229.16667 1.0911882 auto auto 1 0 0;
+      316.66667 0.01207919 fixed fixed 1 0 0 -0.84263554 1 -0.84263554 1;
+    }
+  }
+  anim visibility visibility 6;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  l_wrist_CTRL 4 1;
+  anim rotate.rotateX rotateX 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -20.212803 auto auto 1 0 0;
+      125 -40.509968 auto auto 1 0 0;
+      145.83333 -22.710913 auto auto 1 0 0;
+      229.16667 3.3927858 auto auto 1 0 0;
+      316.66667 -20.213 fixed fixed 1 0 0 -29.202776 1 -29.202776 1;
+    }
+  }
+  anim rotate.rotateY rotateY 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 -10.139112 auto auto 1 0 0;
+      125 21.1818 auto auto 1 0 0;
+      145.83333 10.180958 auto auto 1 0 0;
+      316.66667 -10.139112 fixed fixed 1 0 0 -13.784756 1 -13.784756 1;
+    }
+  }
+  anim translate.translateX translateX 3;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.78688674 auto auto 1 0 0;
+      62.666667 0.83173091 auto auto 1 0 0;
+      125 0.86363047 auto auto 1 0 0;
+      145.83333 0.96607711 auto auto 1 0 0;
+      229.16667 1.1956425 auto auto 1 0 0;
+      316.66667 0.787 fixed fixed 1 0 0 0.088027234 1 0.088027234 1;
+    }
+  }
+  anim translate.translateY translateY 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.16552087 auto auto 1 0 0;
+      62.666667 0.22555075 auto auto 1 0 0;
+      125 0.31112559 auto auto 1 0 0;
+      145.83333 0.35293031 auto auto 1 0 0;
+      229.16667 0.60393155 auto auto 1 0 0;
+      316.66667 0.166 fixed fixed 1 0 0 0.14995515 1 0.14995515 1;
+    }
+  }
+  anim translate.translateZ translateZ 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0.77303367 auto auto 1 0 0;
+      62.666667 1.1332775 auto auto 1 0 0;
+      125 0.82796373 auto auto 1 0 0;
+      145.83333 0.83273524 auto auto 1 0 0;
+      229.16667 -1.1862686 auto auto 1 0 0;
+      316.66667 0.773 fixed fixed 1 0 0 1.2170112 1 1.2170112 1;
+    }
+  }
+  anim visibility visibility 6;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  head_CTRL 4 1;
+  anim rotate.rotateX rotateX 0;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1.4716119 auto auto 1 0 0;
+      83.333333 -6.6693656 auto auto 1 0 0;
+      125 -7.553618 auto auto 1 0 0;
+      157.83333 11.871584 fixed fixed 1 0 0 0 1 0 1;
+      187.5 6.7343829 auto auto 1 0 0;
+      250 -3.0811132 auto auto 1 0 0;
+      270.83333 10.780025 auto auto 1 0 0;
+      316.66667 1.4716119 fixed fixed 1 0 0 -10.020347 1 -10.020347 1;
+    }
+  }
+  anim rotate.rotateY rotateY 1;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim rotate.rotateZ rotateZ 2;
+  animData {
+    input time;
+    output angular;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim visibility visibility 3;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 spline step 1 0 0;
+      316.66667 1 fixed step 1 0 0 0 1;
+    }
+  }
+  anim translate.translateX translateX 4;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateY translateY 5;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim translate.translateZ translateZ 6;
+  animData {
+    input time;
+    output linear;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 0 auto auto 1 0 0;
+      316.66667 0 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleX scaleX 7;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleY scaleY 8;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+  anim scale.scaleZ scaleZ 9;
+  animData {
+    input time;
+    output unitless;
+    weighted 0;
+    preInfinity constant;
+    postInfinity constant;
+    keys {
+      41.666667 1 auto auto 1 0 0;
+      316.66667 1 fixed fixed 1 0 0 0 1 0 1;
+    }
+  }
+}
+dagNode {
+  l_wrist 1 1;
+  static ikb ikBlend 0;
+  { 1 }
+  static off offset 1;
+  { 0 }
+  static poleVector.pvx poleVectorX 2;
+  { 0.18608401 }
+  static poleVector.pvy poleVectorY 3;
+  { -0.18843639 }
+  static poleVector.pvz poleVectorZ 4;
+  { -0.36533213 }
+  static rol roll 5;
+  { 0 }
+  static rotate.rx rotateX 6;
+  { 0 }
+  static rotate.ry rotateY 7;
+  { 0 }
+  static rotate.rz rotateZ 8;
+  { 0 }
+  static scale.sx scaleX 9;
+  { 1 }
+  static scale.sy scaleY 10;
+  { 1 }
+  static scale.sz scaleZ 11;
+  { 1 }
+  static twi twist 15;
+  { 0 }
+  static v visibility 16;
+  { 1 }
+}
+dagNode {
+  r_wrist 1 1;
+  static ikb ikBlend 0;
+  { 1 }
+  static off offset 1;
+  { 0 }
+  static poleVector.pvx poleVectorX 2;
+  { -0.087158646 }
+  static poleVector.pvy poleVectorY 3;
+  { -0.24805486 }
+  static poleVector.pvz poleVectorZ 4;
+  { -0.36670868 }
+  static rol roll 5;
+  { 0 }
+  static rotate.rx rotateX 6;
+  { 0 }
+  static rotate.ry rotateY 7;
+  { 0 }
+  static rotate.rz rotateZ 8;
+  { 0 }
+  static scale.sx scaleX 9;
+  { 1 }
+  static scale.sy scaleY 10;
+  { 1 }
+  static scale.sz scaleZ 11;
+  { 1 }
+  static twi twist 15;
+  { 0 }
+  static v visibility 16;
+  { 1 }
+}
+offlineFileData //Maya ASCII 2019 scene
+//Name: ch_businessman_walk.editMA
+//Last modified: Thu, Jun 20, 2019 02:47:44 PM
+//Codeset: 1252
+requires maya "2019";
+requires "stereoCamera" "10.0";
+requires "stereoCamera" "10.0";
+currentUnit -l centimeter -a degree -t 100fps;
+fileInfo "fileCreationSource" "ExportEdits";
+createNode orientConstraint -n "l_leg_foot_j_orientConstraint1";
+	rename -uid "3465AFB3-4BCE-6A9A-1B1E-C39DEAF262C2";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "l_foot_CRTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 34.692500124189287 84.040418852211133 11.866124518004101 ;
+	setAttr ".o" -type "double3" 89.999999999999744 -81.416378519886351 -89.999999999999744 ;
+	setAttr ".rsrr" -type "double3" -2.3854160110976384e-15 -6.5598940305185035e-15 
+		9.5416640443905503e-15 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "r_leg_foot_j_orientConstraint1";
+	rename -uid "1A102492-4A8C-386C-8969-9BB0165CA089";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "r_foot_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 5.6804338650639643 92.341821796650379 19.991208463486558 ;
+	setAttr ".o" -type "double3" 89.999887884017156 -81.41644059101472 -89.999886614008858 ;
+	setAttr ".rsrr" -type "double3" -1.9878466759146984e-14 -1.5405811738338917e-15 
+		-1.5902773407317584e-15 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "head_j_orientConstraint1";
+	rename -uid "51BBFF42-4334-46BC-3134-D59ED5A4CD95";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "head_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -88.772918066471931 -101.62181540348188 -33.850850601249192 ;
+	setAttr ".o" -type "double3" 90.504274582747215 -1.0417831863274079 92.448617470820992 ;
+	setAttr ".rsrr" -type "double3" -3.2927525022109579e-15 1.228871963500085e-14 -29.999999999999993 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "l_hand_j_orientConstraint1";
+	rename -uid "F25AFDD1-43DB-EA36-77CD-8DB7D6AEB57B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "l_wrist_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -5.4041954430599333 3.5991906104621183 54.703167948244754 ;
+	setAttr ".o" -type "double3" 3.1398873832083707 -0.30740190571389087 -84.413816325759512 ;
+	setAttr ".rsrr" -type "double3" 1.3209396208244071 24.261976879440127 -9.099582138626392 ;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "r_hand_j_orientConstraint1";
+	rename -uid "C2E3F153-4CF4-CCE0-FD67-9CA2A0F0D138";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "r_wrist_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" -153.04436474064795 8.4628647546533067 -94.631127654573802 ;
+	setAttr ".o" -type "double3" 176.86094193109193 -0.31250043848898951 -455.67786787801452 ;
+	setAttr ".rsrr" -type "double3" 5.9416167553790107 -34.664361696575881 -729.36303474672104 ;
+	setAttr -k on ".w0";
+createNode pointConstraint -n "l_ankle_pointConstraint1";
+	rename -uid "55BEFCD6-40D8-3BE1-D241-8BBFA0881C02";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "l_foot_CRTLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 0.88049966096878052 0.29244452714920044 -0.3338715136051178 ;
+	setAttr -k on ".w0";
+createNode pointConstraint -n "r_ankle_pointConstraint1";
+	rename -uid "6D2B9947-4502-4FA1-B193-58AC154DD2C9";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "r_foot_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -0.88050001859664917 0.29244452714920044 -0.3338715136051178 ;
+	setAttr -k on ".w0";
+createNode pointConstraint -n "spine_curve_pointConstraint1";
+	rename -uid "8D650FFD-4E19-0370-E265-858C9FB4073B";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hip_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr -k on ".w0";
+createNode orientConstraint -n "spine_curve_orientConstraint1";
+	rename -uid "291A10FC-487C-E844-FD21-D299F95E6425";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "hip_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".lr" -type "double3" 0 0 7.4414096803930345 ;
+	setAttr -k on ".w0";
+createNode pointConstraint -n "l_wrist_pointConstraint1";
+	rename -uid "FB03B790-48D0-0026-1E6F-8EAFF878754A";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "l_wrist_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" 1.4403669834136963 3.7954959869384766 1.1010800600051878 ;
+	setAttr -k on ".w0";
+createNode pointConstraint -n "r_wrist_pointConstraint1";
+	rename -uid "293E8CFF-4266-53A4-C8C2-F3AA6B010085";
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "r_wrist_CTRLW0" -dv 1 -min 0 -at "double";
+	setAttr -k on ".nds";
+	setAttr -k off ".v";
+	setAttr -k off ".tx";
+	setAttr -k off ".ty";
+	setAttr -k off ".tz";
+	setAttr -k off ".rx";
+	setAttr -k off ".ry";
+	setAttr -k off ".rz";
+	setAttr -k off ".sx";
+	setAttr -k off ".sy";
+	setAttr -k off ".sz";
+	setAttr ".erp" yes;
+	setAttr ".rst" -type "double3" -1.5591214895248413 4.2711338996887198 1.291532516479492 ;
+	setAttr -k on ".w0";
+connectAttr "l_leg_foot_j_orientConstraint1.crx" "<main>:l_leg_foot_j.rx";
+connectAttr "l_leg_foot_j_orientConstraint1.cry" "<main>:l_leg_foot_j.ry";
+connectAttr "l_leg_foot_j_orientConstraint1.crz" "<main>:l_leg_foot_j.rz";
+connectAttr "<main>:l_leg_foot_j.ro" "l_leg_foot_j_orientConstraint1.cro";
+connectAttr "<main>:l_leg_foot_j.pim" "l_leg_foot_j_orientConstraint1.cpim";
+connectAttr "<main>:l_leg_foot_j.jo" "l_leg_foot_j_orientConstraint1.cjo";
+connectAttr "<main>:l_leg_foot_j.is" "l_leg_foot_j_orientConstraint1.is";
+connectAttr "<main>:l_foot_CRTL.r" "l_leg_foot_j_orientConstraint1.tg[0].tr";
+connectAttr "<main>:l_foot_CRTL.ro" "l_leg_foot_j_orientConstraint1.tg[0].tro";
+connectAttr "<main>:l_foot_CRTL.pm" "l_leg_foot_j_orientConstraint1.tg[0].tpm";
+connectAttr "l_leg_foot_j_orientConstraint1.w0" "l_leg_foot_j_orientConstraint1.tg[0].tw"
+		;
+connectAttr "r_leg_foot_j_orientConstraint1.crx" "<main>:r_leg_foot_j.rx";
+connectAttr "r_leg_foot_j_orientConstraint1.cry" "<main>:r_leg_foot_j.ry";
+connectAttr "r_leg_foot_j_orientConstraint1.crz" "<main>:r_leg_foot_j.rz";
+connectAttr "<main>:r_leg_foot_j.ro" "r_leg_foot_j_orientConstraint1.cro";
+connectAttr "<main>:r_leg_foot_j.pim" "r_leg_foot_j_orientConstraint1.cpim";
+connectAttr "<main>:r_leg_foot_j.jo" "r_leg_foot_j_orientConstraint1.cjo";
+connectAttr "<main>:r_leg_foot_j.is" "r_leg_foot_j_orientConstraint1.is";
+connectAttr "<main>:r_foot_CTRL.r" "r_leg_foot_j_orientConstraint1.tg[0].tr";
+connectAttr "<main>:r_foot_CTRL.ro" "r_leg_foot_j_orientConstraint1.tg[0].tro";
+connectAttr "<main>:r_foot_CTRL.pm" "r_leg_foot_j_orientConstraint1.tg[0].tpm";
+connectAttr "r_leg_foot_j_orientConstraint1.w0" "r_leg_foot_j_orientConstraint1.tg[0].tw"
+		;
+connectAttr "head_j_orientConstraint1.crx" "<main>:head_j.rx";
+connectAttr "head_j_orientConstraint1.cry" "<main>:head_j.ry";
+connectAttr "head_j_orientConstraint1.crz" "<main>:head_j.rz";
+connectAttr "<main>:head_j.ro" "head_j_orientConstraint1.cro";
+connectAttr "<main>:head_j.pim" "head_j_orientConstraint1.cpim";
+connectAttr "<main>:head_j.jo" "head_j_orientConstraint1.cjo";
+connectAttr "<main>:head_j.is" "head_j_orientConstraint1.is";
+connectAttr "<main>:head_CTRL.r" "head_j_orientConstraint1.tg[0].tr";
+connectAttr "<main>:head_CTRL.ro" "head_j_orientConstraint1.tg[0].tro";
+connectAttr "<main>:head_CTRL.pm" "head_j_orientConstraint1.tg[0].tpm";
+connectAttr "head_j_orientConstraint1.w0" "head_j_orientConstraint1.tg[0].tw";
+connectAttr "l_hand_j_orientConstraint1.crx" "<main>:l_hand_j.rx";
+connectAttr "l_hand_j_orientConstraint1.cry" "<main>:l_hand_j.ry";
+connectAttr "l_hand_j_orientConstraint1.crz" "<main>:l_hand_j.rz";
+connectAttr "<main>:l_hand_j.ro" "l_hand_j_orientConstraint1.cro";
+connectAttr "<main>:l_hand_j.pim" "l_hand_j_orientConstraint1.cpim";
+connectAttr "<main>:l_hand_j.jo" "l_hand_j_orientConstraint1.cjo";
+connectAttr "<main>:l_hand_j.is" "l_hand_j_orientConstraint1.is";
+connectAttr "<main>:l_wrist_CTRL.r" "l_hand_j_orientConstraint1.tg[0].tr";
+connectAttr "<main>:l_wrist_CTRL.ro" "l_hand_j_orientConstraint1.tg[0].tro";
+connectAttr "<main>:l_wrist_CTRL.pm" "l_hand_j_orientConstraint1.tg[0].tpm";
+connectAttr "l_hand_j_orientConstraint1.w0" "l_hand_j_orientConstraint1.tg[0].tw"
+		;
+connectAttr "r_hand_j_orientConstraint1.crx" "<main>:r_hand_j.rx";
+connectAttr "r_hand_j_orientConstraint1.cry" "<main>:r_hand_j.ry";
+connectAttr "r_hand_j_orientConstraint1.crz" "<main>:r_hand_j.rz";
+connectAttr "<main>:r_hand_j.ro" "r_hand_j_orientConstraint1.cro";
+connectAttr "<main>:r_hand_j.pim" "r_hand_j_orientConstraint1.cpim";
+connectAttr "<main>:r_hand_j.jo" "r_hand_j_orientConstraint1.cjo";
+connectAttr "<main>:r_hand_j.is" "r_hand_j_orientConstraint1.is";
+connectAttr "<main>:r_wrist_CTRL.r" "r_hand_j_orientConstraint1.tg[0].tr";
+connectAttr "<main>:r_wrist_CTRL.ro" "r_hand_j_orientConstraint1.tg[0].tro";
+connectAttr "<main>:r_wrist_CTRL.pm" "r_hand_j_orientConstraint1.tg[0].tpm";
+connectAttr "r_hand_j_orientConstraint1.w0" "r_hand_j_orientConstraint1.tg[0].tw"
+		;
+connectAttr "l_ankle_pointConstraint1.ctx" "<main>:l_ankle.tx";
+connectAttr "l_ankle_pointConstraint1.cty" "<main>:l_ankle.ty";
+connectAttr "l_ankle_pointConstraint1.ctz" "<main>:l_ankle.tz";
+connectAttr "<main>:l_ankle.pim" "l_ankle_pointConstraint1.cpim";
+connectAttr "<main>:l_ankle.rp" "l_ankle_pointConstraint1.crp";
+connectAttr "<main>:l_ankle.rpt" "l_ankle_pointConstraint1.crt";
+connectAttr "<main>:l_foot_CRTL.t" "l_ankle_pointConstraint1.tg[0].tt";
+connectAttr "<main>:l_foot_CRTL.rp" "l_ankle_pointConstraint1.tg[0].trp";
+connectAttr "<main>:l_foot_CRTL.rpt" "l_ankle_pointConstraint1.tg[0].trt";
+connectAttr "<main>:l_foot_CRTL.pm" "l_ankle_pointConstraint1.tg[0].tpm";
+connectAttr "l_ankle_pointConstraint1.w0" "l_ankle_pointConstraint1.tg[0].tw";
+connectAttr "r_ankle_pointConstraint1.ctx" "<main>:r_ankle.tx";
+connectAttr "r_ankle_pointConstraint1.cty" "<main>:r_ankle.ty";
+connectAttr "r_ankle_pointConstraint1.ctz" "<main>:r_ankle.tz";
+connectAttr "<main>:r_ankle.pim" "r_ankle_pointConstraint1.cpim";
+connectAttr "<main>:r_ankle.rp" "r_ankle_pointConstraint1.crp";
+connectAttr "<main>:r_ankle.rpt" "r_ankle_pointConstraint1.crt";
+connectAttr "<main>:r_foot_CTRL.t" "r_ankle_pointConstraint1.tg[0].tt";
+connectAttr "<main>:r_foot_CTRL.rp" "r_ankle_pointConstraint1.tg[0].trp";
+connectAttr "<main>:r_foot_CTRL.rpt" "r_ankle_pointConstraint1.tg[0].trt";
+connectAttr "<main>:r_foot_CTRL.pm" "r_ankle_pointConstraint1.tg[0].tpm";
+connectAttr "r_ankle_pointConstraint1.w0" "r_ankle_pointConstraint1.tg[0].tw";
+connectAttr "spine_curve_pointConstraint1.ctx" "<main>:spine_curve.tx";
+connectAttr "spine_curve_pointConstraint1.cty" "<main>:spine_curve.ty";
+connectAttr "spine_curve_pointConstraint1.ctz" "<main>:spine_curve.tz";
+connectAttr "<main>:spine_curve.pim" "spine_curve_pointConstraint1.cpim";
+connectAttr "<main>:spine_curve.rp" "spine_curve_pointConstraint1.crp";
+connectAttr "<main>:spine_curve.rpt" "spine_curve_pointConstraint1.crt";
+connectAttr "<main>:hip_CTRL.t" "spine_curve_pointConstraint1.tg[0].tt";
+connectAttr "<main>:hip_CTRL.rp" "spine_curve_pointConstraint1.tg[0].trp";
+connectAttr "<main>:hip_CTRL.rpt" "spine_curve_pointConstraint1.tg[0].trt";
+connectAttr "<main>:hip_CTRL.pm" "spine_curve_pointConstraint1.tg[0].tpm";
+connectAttr "spine_curve_pointConstraint1.w0" "spine_curve_pointConstraint1.tg[0].tw"
+		;
+connectAttr "spine_curve_orientConstraint1.crx" "<main>:spine_curve.rx";
+connectAttr "spine_curve_orientConstraint1.crz" "<main>:spine_curve.rz";
+connectAttr "<main>:spine_curve.ro" "spine_curve_orientConstraint1.cro";
+connectAttr "<main>:spine_curve.pim" "spine_curve_orientConstraint1.cpim";
+connectAttr "<main>:hip_CTRL.r" "spine_curve_orientConstraint1.tg[0].tr";
+connectAttr "<main>:hip_CTRL.ro" "spine_curve_orientConstraint1.tg[0].tro";
+connectAttr "<main>:hip_CTRL.pm" "spine_curve_orientConstraint1.tg[0].tpm";
+connectAttr "spine_curve_orientConstraint1.w0" "spine_curve_orientConstraint1.tg[0].tw"
+		;
+connectAttr "l_wrist_pointConstraint1.ctx" "<main>:l_wrist.tx";
+connectAttr "l_wrist_pointConstraint1.cty" "<main>:l_wrist.ty";
+connectAttr "l_wrist_pointConstraint1.ctz" "<main>:l_wrist.tz";
+connectAttr "<main>:l_wrist.pim" "l_wrist_pointConstraint1.cpim";
+connectAttr "<main>:l_wrist.rp" "l_wrist_pointConstraint1.crp";
+connectAttr "<main>:l_wrist.rpt" "l_wrist_pointConstraint1.crt";
+connectAttr "<main>:l_wrist_CTRL.t" "l_wrist_pointConstraint1.tg[0].tt";
+connectAttr "<main>:l_wrist_CTRL.rp" "l_wrist_pointConstraint1.tg[0].trp";
+connectAttr "<main>:l_wrist_CTRL.rpt" "l_wrist_pointConstraint1.tg[0].trt";
+connectAttr "<main>:l_wrist_CTRL.pm" "l_wrist_pointConstraint1.tg[0].tpm";
+connectAttr "l_wrist_pointConstraint1.w0" "l_wrist_pointConstraint1.tg[0].tw";
+connectAttr "r_wrist_pointConstraint1.ctx" "<main>:r_wrist.tx";
+connectAttr "r_wrist_pointConstraint1.cty" "<main>:r_wrist.ty";
+connectAttr "r_wrist_pointConstraint1.ctz" "<main>:r_wrist.tz";
+connectAttr "<main>:r_wrist.pim" "r_wrist_pointConstraint1.cpim";
+connectAttr "<main>:r_wrist.rp" "r_wrist_pointConstraint1.crp";
+connectAttr "<main>:r_wrist.rpt" "r_wrist_pointConstraint1.crt";
+connectAttr "<main>:r_wrist_CTRL.t" "r_wrist_pointConstraint1.tg[0].tt";
+connectAttr "<main>:r_wrist_CTRL.rp" "r_wrist_pointConstraint1.tg[0].trp";
+connectAttr "<main>:r_wrist_CTRL.rpt" "r_wrist_pointConstraint1.tg[0].trt";
+connectAttr "<main>:r_wrist_CTRL.pm" "r_wrist_pointConstraint1.tg[0].tpm";
+connectAttr "r_wrist_pointConstraint1.w0" "r_wrist_pointConstraint1.tg[0].tw";
+// End of ch_businessman_walk.editMA
+
+;

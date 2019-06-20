@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904998793683414}
   - component: {fileID: 7752904998793683412}
-  - component: {fileID: 7752904998793683415}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,32 +79,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904998793683415
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904998793683409}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3004732}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 1.0290537}
-  m_EdgeRadius: 0
 --- !u!1 &7752904998794633475
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +88,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7752904998794633473}
+  - component: {fileID: 716354038}
   m_Layer: 0
   m_Name: Boomstam_01
   m_TagString: Ground
@@ -144,6 +118,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &716354038
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752904998794633475}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -140.7374, y: -15.945454}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 142.79169, y: 2.748375}
+  m_EdgeRadius: 0
 --- !u!1 &7752904999457226235
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +154,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904999457226232}
   - component: {fileID: 7752904999457226233}
-  - component: {fileID: 7752904999457226238}
   m_Layer: 0
   m_Name: en_plat_boomstam_front
   m_TagString: Ground
@@ -224,32 +223,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904999457226238
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904999457226235}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 3.538343}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 20.24, y: 9.99}
-    newSize: {x: 20.24, y: 9.99}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 20.24, y: 1.0121222}
-  m_EdgeRadius: 0
 --- !u!1 &7752904999606433295
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +233,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904999606433292}
   - component: {fileID: 7752904999606433282}
-  - component: {fileID: 7752904999606433293}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid (2)
   m_TagString: Ground
@@ -330,32 +302,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904999606433293
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904999606433295}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.35443115}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 0.9211378}
-  m_EdgeRadius: 0
 --- !u!1 &7752904999642030727
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +312,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904999642030724}
   - component: {fileID: 7752904999642030725}
-  - component: {fileID: 7752904999642030778}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid (1)
   m_TagString: Ground
@@ -436,32 +381,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904999642030778
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904999642030727}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.34991264}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 0.9301748}
-  m_EdgeRadius: 0
 --- !u!1 &7752904999742713941
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +391,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904999742713930}
   - component: {fileID: 7752904999742713931}
-  - component: {fileID: 7752904999742713928}
   m_Layer: 0
   m_Name: en_plat_boomstam_back
   m_TagString: Untagged
@@ -542,32 +460,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904999742713928
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904999742713941}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.9498835}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.04, y: 4.79}
-    newSize: {x: 7.04, y: 4.79}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.04, y: 0.8902329}
-  m_EdgeRadius: 0
 --- !u!1 &7752904999917714881
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +470,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752904999917714886}
   - component: {fileID: 7752904999917714884}
-  - component: {fileID: 7752904999917714887}
   m_Layer: 0
   m_Name: en_plat_boomstam_back (1)
   m_TagString: Untagged
@@ -648,32 +539,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752904999917714887
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752904999917714881}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.9498835}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.04, y: 4.79}
-    newSize: {x: 7.04, y: 4.79}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.04, y: 0.8902329}
-  m_EdgeRadius: 0
 --- !u!1 &7752905000220123364
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +549,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752905000220123365}
   - component: {fileID: 7752905000220123162}
-  - component: {fileID: 7752905000220123163}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid
   m_TagString: Ground
@@ -754,32 +618,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752905000220123163
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752905000220123364}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3672477}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 0.8955046}
-  m_EdgeRadius: 0
 --- !u!1 &7752905000621330559
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +628,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7752905000621330556}
   - component: {fileID: 7752905000621330546}
-  - component: {fileID: 7752905000621330557}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid (3)
   m_TagString: Untagged
@@ -860,29 +697,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7752905000621330557
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7752905000621330559}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3672477}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 0.8955046}
-  m_EdgeRadius: 0
