@@ -5,13 +5,18 @@ using UnityEngine.Playables;
 
 public class Obstacle_manager : MonoBehaviour
 {
+    //Trigger
+    private Collider2D trigger;
+
     // Obstacles
     public GameObject ObstacleOne;
     public GameObject ObstacleTwo;
     public GameObject ObstacleThree;
 
+    //Bools
     private bool canPlay = true;
     private bool isDestroyed = false;
+    private bool canDestroy;
 
 
     //Score
@@ -36,12 +41,14 @@ public class Obstacle_manager : MonoBehaviour
         obsTwoAnim = ObstacleTwo.GetComponent<Animator>();
         obsThreeAnim = obsThreeAnim.GetComponent<Animator>();
 
+        trigger = GetComponent<Collider2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Score.scoreAmount >= 1 && canPlay == true)
+       if(Score.scoreAmount >= 1 && canPlay == true && canDestroy)
         {
             obsOneAnim.SetTrigger("isDead");
             cutScene.Play();
@@ -64,5 +71,24 @@ public class Obstacle_manager : MonoBehaviour
             isDestroyed = false;
 
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+
+            canDestroy = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+
+            canDestroy = false;
+        }
+
     }
 }
