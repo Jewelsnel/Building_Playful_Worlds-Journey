@@ -10,7 +10,6 @@ public class Test_enemy : MonoBehaviour
     //Animation
     private Animator enemyAnim;
     private player_animator_controller playeranim;
-    //private bool facingRight = true;
     private SpriteRenderer enemy;
 
 
@@ -23,6 +22,7 @@ public class Test_enemy : MonoBehaviour
     public float moveSpeed;
     public float moveSpeedAttack;
     private bool movingRight;
+    private Rigidbody2D rb;
 
 
     //Edge Detection
@@ -61,6 +61,7 @@ public class Test_enemy : MonoBehaviour
         enemyAnim = GetComponent<Animator>();
         playeranim = target.gameObject.GetComponent<player_animator_controller>();
         enemy = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
@@ -69,7 +70,6 @@ public class Test_enemy : MonoBehaviour
     {
 
        ExecuteState();
-
     }
 
 
@@ -99,9 +99,6 @@ public class Test_enemy : MonoBehaviour
                 AttackState();
 
                 break;
-
-
-
         }
 
     }
@@ -232,7 +229,6 @@ public class Test_enemy : MonoBehaviour
 
     void ChaseState()
     {
- 
         enemyAnim.SetBool("isChasing", true);
         enemyAnim.SetBool("isWalking", false);
         enemyAnim.SetBool("isAttacking", false);
@@ -240,16 +236,17 @@ public class Test_enemy : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeedAttack * Time.deltaTime);
 
-        if (transform.position.x < 0)//true
+        if (target.position.x > transform.position.x)
         {
-            transform.eulerAngles = new Vector3(0, -180, 0);
-            //movingRight = false;
-        }
-        if (transform.position.x > 0)
-        {
+
             transform.eulerAngles = new Vector3(0, 0, 0);
-           // movingRight = true;
         }
+        else if (target.position.x < transform.position.x)
+        {
+
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+
 
         if (Vector2.Distance(transform.position, target.position) <= engageDistance && Vector2.Distance(transform.position, target.position) >= 2)
         {
@@ -262,6 +259,11 @@ public class Test_enemy : MonoBehaviour
         {
             SwitchState(EnemyStates.Patrol);
         }
+
+        
+
+
+
     }
 
     void AttackState()
@@ -278,7 +280,6 @@ public class Test_enemy : MonoBehaviour
         if (attackTimer < -0)
         {
 
-            //Debug.Log("Valt aan");
             player_lives.health--;
             attackTimer = Random.Range(4, 6);
             playeranim.isHurt = true;

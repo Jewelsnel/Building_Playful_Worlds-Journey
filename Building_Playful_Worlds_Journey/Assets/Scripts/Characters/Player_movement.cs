@@ -84,15 +84,6 @@ public class Player_movement : MonoBehaviour
 
         }
 
-        //else if (canJump == false)
-        //{
-        //    moveSpeed = 40;
-        //}
-
-        //if (canJump == true)
-        //{
-        //    moveSpeed = 60;
-        //}
 
 
 

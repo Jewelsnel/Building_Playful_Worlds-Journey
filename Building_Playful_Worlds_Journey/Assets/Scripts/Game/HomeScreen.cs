@@ -8,6 +8,10 @@ public class HomeScreen : MonoBehaviour
  
     public void BackToHomeScreen()
     {
+        
         SceneManager.LoadScene(0, LoadSceneMode.Single );
+
+
     }
+
 }
