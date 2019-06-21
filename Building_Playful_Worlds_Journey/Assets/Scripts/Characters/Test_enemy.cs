@@ -40,12 +40,12 @@ public class Test_enemy : MonoBehaviour
     public Transform player_detector;
     public LayerMask player;
     public float attackTimer;
-    
+
+
 
     public float waitTimer = 5;
     public float patrolTimer = 8;
 
-    //public bool hurtPlayer;
 
     //If statements met states: als player character in de buurt komt, gaat hij rennnen
     //In de state zelf, een if statement plaatsen
@@ -70,6 +70,12 @@ public class Test_enemy : MonoBehaviour
     {
 
        ExecuteState();
+
+
+        if (rb.position.y < -100f)
+        {
+            Death();
+        }
     }
 
 
@@ -274,17 +280,20 @@ public class Test_enemy : MonoBehaviour
         enemyAnim.SetBool("isWalking", false);
         enemyAnim.SetBool("isChasing", false);
 
+        
+
+            attackTimer -= Time.deltaTime;
+            if (attackTimer < -0)
+            {
+
+                
+                attackTimer = Random.Range(4, 6);
+                player_lives.health--;
+                playeranim.isHurt = true;
+
+            }
 
 
-        attackTimer -= Time.deltaTime;
-        if (attackTimer < -0)
-        {
-
-            player_lives.health--;
-            attackTimer = Random.Range(4, 6);
-            playeranim.isHurt = true;
-
-        }
 
 
         if (Vector2.Distance(transform.position, target.position) > engageDistance && Vector2.Distance(transform.position, target.position) <= followDistance)
@@ -299,6 +308,8 @@ public class Test_enemy : MonoBehaviour
             SwitchState(EnemyStates.Patrol);
         }
     }
+
+
 
 
 

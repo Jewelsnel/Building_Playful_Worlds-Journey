@@ -25,8 +25,10 @@ public class player_attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        startTimeBtwAttack -= Time.deltaTime;
         if (timeBtwAttack <= 0)
         {
+            startTimeBtwAttack = Random.Range(1, 3);
             if (Input.GetButtonDown("Fire1"))
             {
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, forestEnemies);
@@ -36,15 +38,9 @@ public class player_attack : MonoBehaviour
                 }
             }
         
-           timeBtwAttack = startTimeBtwAttack;
+           //timeBtwAttack = startTimeBtwAttack;
         }
-
-        else
-        {
-            timeBtwAttack -= Time.deltaTime;
-        }
-
-        
+       
     }
 
     void OnDrawGizmosSelected()
@@ -52,4 +48,17 @@ public class player_attack : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
+
+
+
+    /*attackTimer -= Time.deltaTime;
+            if (attackTimer< -0)
+            {
+
+                
+                attackTimer = Random.Range(4, 6);
+                player_lives.health--;
+                playeranim.isHurt = true;
+
+            }*/
 }
