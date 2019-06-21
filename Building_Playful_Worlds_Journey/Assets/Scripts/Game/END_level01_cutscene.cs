@@ -22,11 +22,11 @@ public class END_level01_cutscene : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if (collision.tag == "Player")
+        {
             cutScene.Play();
             Destroy(trigger);
-
-       
+        }      
     }
 
 }

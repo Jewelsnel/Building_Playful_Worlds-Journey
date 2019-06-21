@@ -4,45 +4,55 @@ using UnityEngine;
 
 public class Final_Obstacle : MonoBehaviour
 {
-    public Score score;
-    public Animator obstacle;
 
-    public bool canDestroy = false;
-    // Start is called before the first frame update
+    private Collider2D trigger;
+    public Animator obsAnim;
+    public GameObject obstacle;
+    public Score score;
+    public int scoreDeliverable;
+
+    private bool canDestroy = false;
+
+
+
     void Start()
     {
-        obstacle = obstacle.GetComponent<Animator>();
+
+        obsAnim = obstacle.GetComponent<Animator>();
+        trigger = GetComponent<Collider2D>();
+        score = gameObject.GetComponent<Score>();
     }
 
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Player")
+        if(collision.tag == "Player")
         {
-            Debug.Log(canDestroy);
+            
             canDestroy = true;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            
+            canDestroy = false;
+        }
 
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+
+    private void Update()
     {
-        if (collision.collider.tag == "Player")
+        if(Score.scoreAmount == scoreDeliverable && canDestroy)
         {
-            canDestroy = false;
+           
+            obsAnim.SetTrigger("isDead");
+            Destroy(trigger);
+            
         }
     }
-
-
-    // Update is called once per frame
-    /*void Update()
-    {
-        if(Score.scoreAmount == 9 && canDestroy)
-        {
-            obstacle.SetTrigger("isDead");
-            canDestroy = false;
-        }
-    }*/
-
 
 }

@@ -2261,6 +2261,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 716354038, guid: c494687eba3a65e42b2989d180689dcc, type: 3}
+      propertyPath: m_Offset.x
+      value: -131.23936
+      objectReference: {fileID: 0}
+    - target: {fileID: 716354038, guid: c494687eba3a65e42b2989d180689dcc, type: 3}
+      propertyPath: m_Size.x
+      value: 161.78773
+      objectReference: {fileID: 0}
     - target: {fileID: 7752904998793683415, guid: c494687eba3a65e42b2989d180689dcc,
         type: 3}
       propertyPath: m_Offset.y
@@ -2270,14 +2278,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 0.9310303
-      objectReference: {fileID: 0}
-    - target: {fileID: 716354038, guid: c494687eba3a65e42b2989d180689dcc, type: 3}
-      propertyPath: m_Offset.x
-      value: -131.23936
-      objectReference: {fileID: 0}
-    - target: {fileID: 716354038, guid: c494687eba3a65e42b2989d180689dcc, type: 3}
-      propertyPath: m_Size.x
-      value: 161.78773
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7752905000220123163, guid: c494687eba3a65e42b2989d180689dcc, type: 3}
@@ -5721,7 +5721,7 @@ Animator:
   m_GameObject: {fileID: 1030408144}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a5dcce86a66b8e141a4cc9c9a8ae5dc2, type: 2}
+  m_Controller: {fileID: 9100000, guid: e7662904d225eaf4db79664ced6b704c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12070,7 +12070,7 @@ Animator:
   m_GameObject: {fileID: 2134717977}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f881e9646db8de34db928673808a7fb2, type: 2}
+  m_Controller: {fileID: 9100000, guid: e7662904d225eaf4db79664ced6b704c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

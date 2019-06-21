@@ -7,7 +7,11 @@ public class deathTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        endLevelUI.SetActive(true);
+        if (collision.tag == "Player")
+        {
+            endLevelUI.SetActive(true);
+        }
+            
 
     }
 }

@@ -53,7 +53,6 @@ public class Obstacle_manager : MonoBehaviour
         if (Score.scoreAmount == 6 && isDestroyed == false)
         {
 
-
             obsTwoAnim.SetTrigger("isDead");
             isDestroyed = true;
         }
