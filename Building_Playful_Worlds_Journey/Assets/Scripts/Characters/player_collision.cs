@@ -5,10 +5,13 @@ using UnityEngine;
 public class player_collision : MonoBehaviour
 {
     public GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         player = gameObject.transform.parent.gameObject;
+
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class player_collision : MonoBehaviour
     {
         if (collision.collider.tag == "Ground" || collision.collider.tag == "Edge")
         {
+
             player.GetComponent<Player_movement>().canJump = true;
         }
     }

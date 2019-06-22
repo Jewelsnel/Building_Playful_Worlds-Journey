@@ -15,7 +15,7 @@ public class Player_movement : MonoBehaviour
 
     public GameObject gameOverUI;
 
-    //private Animator myAnim;
+    private Animator myAnim;
 
     public float gravity = -15f;
     private Vector2 velocity;
@@ -25,13 +25,14 @@ public class Player_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //myAnim = GetComponent<Animator>();
+        myAnim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         Jump();
+
     }
 
     // Update is called once per frame
@@ -79,6 +80,7 @@ public class Player_movement : MonoBehaviour
         {
             if(jumpRoutine == null)
             {
+                myAnim.SetTrigger("takeOff");
                 jumpRoutine = StartCoroutine(JumpRoutine());
             }
 
@@ -99,11 +101,24 @@ public class Player_movement : MonoBehaviour
 
     IEnumerator JumpRoutine()
     {
+        
         applyGravity = false;
+        myAnim.SetBool("isJumping", true);
         velocity += new Vector2(0, jumpHeight);
         yield return new WaitForSeconds(0.2f);
         applyGravity = true;
-        jumpRoutine = null;
+        myAnim.SetBool("isJumping", false);
+        yield return new WaitForSeconds(0.05f);
+        myAnim.SetBool("Slide", true);
+        yield return new WaitForSeconds(0.6f);
+        myAnim.SetBool("Slide", false);
+        jumpRoutine = null; 
     }
 
 }
+
+/* applyGravity = false;
+        velocity += new Vector2(0, jumpHeight);
+        yield return new WaitForSeconds(0.2f);
+        applyGravity = true;
+        jumpRoutine = null; */
