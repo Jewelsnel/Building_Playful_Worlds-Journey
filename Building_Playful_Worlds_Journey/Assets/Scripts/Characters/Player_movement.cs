@@ -117,8 +117,4 @@ public class Player_movement : MonoBehaviour
 
 }
 
-/* applyGravity = false;
-        velocity += new Vector2(0, jumpHeight);
-        yield return new WaitForSeconds(0.2f);
-        applyGravity = true;
-        jumpRoutine = null; */
+

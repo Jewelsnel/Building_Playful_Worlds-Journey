@@ -42,9 +42,13 @@ public class Test_enemy : MonoBehaviour
     public float attackTimer;
 
 
-
+    //Timers
     public float waitTimer = 5;
     public float patrolTimer = 8;
+
+    //Audio
+    /*public AudioSource ouchSource;
+    public AudioClip ouchClip;*/
 
 
     //If statements met states: als player character in de buurt komt, gaat hij rennnen
@@ -62,6 +66,8 @@ public class Test_enemy : MonoBehaviour
         playeranim = target.gameObject.GetComponent<player_animator_controller>();
         enemy = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+
+        //ouchSource.clip = ouchClip;
     }
 
 
@@ -126,10 +132,14 @@ public class Test_enemy : MonoBehaviour
 
         }
     }
+    /*public void Ouch()
+    {
+        ouchSource.Play();
+
+    }*/
 
     public void Death()
     {
-
         Destroy(gameObject);  
         Score.scoreAmount += 1;
     }

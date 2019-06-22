@@ -15,6 +15,10 @@ public class player_attack : MonoBehaviour
 
     public int damage;
 
+
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,19 +30,23 @@ public class player_attack : MonoBehaviour
     void Update()
     {
         startTimeBtwAttack -= Time.deltaTime;
-        if (timeBtwAttack <= 0)
+        if (startTimeBtwAttack <= 0)
         {
-            startTimeBtwAttack = Random.Range(1, 3);
+            startTimeBtwAttack = Random.Range(0, 1);
             if (Input.GetButtonDown("Fire1"))
             {
+                
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, forestEnemies);
+                
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
+                    
                     enemiesToDamage[i].GetComponent<Test_enemy>().TakeDamage(damage);
+                    
                 }
             }
-        
-           //timeBtwAttack = startTimeBtwAttack;
+            
+            //timeBtwAttack = startTimeBtwAttack;
         }
        
     }
@@ -49,6 +57,7 @@ public class player_attack : MonoBehaviour
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
+    
 
 
     /*attackTimer -= Time.deltaTime;
