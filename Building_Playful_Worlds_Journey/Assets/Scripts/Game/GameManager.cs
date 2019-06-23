@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Restart()
+    public void Restart()
     {
         Score.scoreAmount = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

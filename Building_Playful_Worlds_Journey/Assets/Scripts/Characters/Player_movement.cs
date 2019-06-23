@@ -13,7 +13,7 @@ public class Player_movement : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public GameObject gameOverUI;
+
 
     private Animator myAnim;
 
@@ -115,6 +115,7 @@ public class Player_movement : MonoBehaviour
         jumpRoutine = null; 
     }
 
+    
 }
 
 

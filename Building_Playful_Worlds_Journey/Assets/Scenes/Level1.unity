@@ -122,7 +122,6 @@ GameObject:
   m_Component:
   - component: {fileID: 32509412}
   - component: {fileID: 32509414}
-  - component: {fileID: 32509413}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid (2)
   m_TagString: Untagged
@@ -144,32 +143,6 @@ Transform:
   m_Father: {fileID: 1671818749}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &32509413
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32509411}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3004732}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 1.0290537}
-  m_EdgeRadius: 0
 --- !u!212 &32509414
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -284,6 +257,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332281934930931818, guid: b98bad93cae286b43a270099f3046068,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -2.2525198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332281934930931818, guid: b98bad93cae286b43a270099f3046068,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5049605
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332281934930931818, guid: b98bad93cae286b43a270099f3046068,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.057804048
+      objectReference: {fileID: 0}
+    - target: {fileID: 1332281934930931818, guid: b98bad93cae286b43a270099f3046068,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.657185
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b98bad93cae286b43a270099f3046068, type: 3}
@@ -1156,7 +1149,6 @@ GameObject:
   m_Component:
   - component: {fileID: 246474610}
   - component: {fileID: 246474612}
-  - component: {fileID: 246474611}
   m_Layer: 0
   m_Name: en_plat_boomstam_mid
   m_TagString: Untagged
@@ -1178,32 +1170,6 @@ Transform:
   m_Father: {fileID: 1671818749}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &246474611
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246474609}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3672477}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 18.49, y: 1.63}
-    newSize: {x: 18.49, y: 1.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 18.49, y: 0.8955046}
-  m_EdgeRadius: 0
 --- !u!212 &246474612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1866,7 +1832,6 @@ GameObject:
   m_Component:
   - component: {fileID: 319866549}
   - component: {fileID: 319866551}
-  - component: {fileID: 319866550}
   m_Layer: 0
   m_Name: en_plat_blad_rond (7)
   m_TagString: Ground
@@ -1888,32 +1853,6 @@ Transform:
   m_Father: {fileID: 1190836413}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &319866550
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319866548}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.54355437}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.17, y: 6.47}
-    newSize: {x: 9.17, y: 6.47}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9.17, y: 1.1379472}
-  m_EdgeRadius: 0
 --- !u!212 &319866551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2277,7 +2216,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouchSource
       value: 
-      objectReference: {fileID: 1726053820}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!4 &367131035 stripped
@@ -2396,7 +2335,6 @@ GameObject:
   m_Component:
   - component: {fileID: 397377463}
   - component: {fileID: 397377465}
-  - component: {fileID: 397377464}
   m_Layer: 0
   m_Name: en_plat_blad_lang (4)
   m_TagString: Ground
@@ -2418,32 +2356,6 @@ Transform:
   m_Father: {fileID: 1190836413}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &397377464
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 397377462}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.20723295, y: -1.6824483}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.91, y: 8.35}
-    newSize: {x: 7.91, y: 8.35}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.495534, y: 1.1543095}
-  m_EdgeRadius: 0
 --- !u!212 &397377465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3838,7 +3750,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouchSource
       value: 
-      objectReference: {fileID: 1726053820}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!1 &692917717
@@ -4271,7 +4183,6 @@ MonoBehaviour:
   jumpHeight: 30
   canJump: 0
   facingRight: 1
-  gameOverUI: {fileID: 0}
   gravity: -120
   drag: 0.6
 --- !u!50 &736900108
@@ -5272,7 +5183,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouchSource
       value: 
-      objectReference: {fileID: 1726053820}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!1 &932232752
@@ -6839,7 +6750,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouchSource
       value: 
-      objectReference: {fileID: 1726053820}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!1 &1268883832
@@ -7561,7 +7472,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1427949466}
   - component: {fileID: 1427949468}
-  - component: {fileID: 1427949467}
   m_Layer: 0
   m_Name: en_plat_boomstam_back (1)
   m_TagString: Ground
@@ -7583,32 +7493,6 @@ Transform:
   m_Father: {fileID: 1671818749}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1427949467
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427949465}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.9498835}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.04, y: 4.79}
-    newSize: {x: 7.04, y: 4.79}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7.04, y: 0.8902329}
-  m_EdgeRadius: 0
 --- !u!212 &1427949468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9024,7 +8908,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ouchSource
       value: 
-      objectReference: {fileID: 1726053820}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!1 &1618061312
@@ -9817,12 +9701,6 @@ Transform:
   m_Father: {fileID: 1190836413}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1726053820 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1726053820, guid: e1cb6438908286a4f8dcf461a3080732,
-    type: 3}
-  m_PrefabInstance: {fileID: 366306689355890311}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1729371015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11237,11 +11115,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4863246576155334113, guid: e1cb6438908286a4f8dcf461a3080732,
-        type: 3}
-      propertyPath: ouchSource
-      value: 
-      objectReference: {fileID: 1726053820}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1cb6438908286a4f8dcf461a3080732, type: 3}
 --- !u!1 &2025295025
